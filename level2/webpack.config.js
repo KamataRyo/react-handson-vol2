@@ -1,7 +1,7 @@
 var webpack = require("webpack")
 var path = require("path")
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
- 
+
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
@@ -12,6 +12,7 @@ module.exports = {
     filename: 'bundle.js',
     libraryTarget: "umd"
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
